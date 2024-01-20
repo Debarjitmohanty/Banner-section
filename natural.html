@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="natural.css"> 
+ 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </head>
+    <style>
+      
+    </style>
+    <body>
+         
+      <div class="container">
+        
+          <div class="slide">
+    
+              
+              <div class="item" style="background-image: url(img1.png.jpeg);">
+                  <div class="content">
+                      <div class="name">Pamban Bridge</div>
+                   
+                  </div>
+              </div>
+              <div class="item" style="background-image: url(howrah.png);">
+                  <div class="content">
+                      <div class="name">Howrah Bridge</div>
+                     
+                  </div>
+              </div>
+              <div class="item" style="background-image: url(iron.png);">
+                  <div class="content">
+                      <div class="name">Iron Bridge</div>
+                    
+                  </div>
+              </div>
+              <div class="item" style="background-image: url(tallest-rail-bridge-kashmir.png);">
+                  <div class="content">
+                      <div class="name">Tallest Rail Bridge</div>
+                     
+                  </div>
+              </div>
+              <div class="item" style="background-image: url(Bogibeel_Bridge.png);">
+                  <div class="content">
+                      <div class="name">Bogibeel Bridge</div>
+                      
+                  </div>
+              </div>
+              <div class="item" style="background-image: url(_Durgam_Cheruvu.png);">
+                  <div class="content">
+                      <div class="name">Hyderabad Cable Bridge</div>
+                     
+                  </div>
+              </div>
+    
+          </div>
+    
+          <div class="button">
+              <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+              <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+    
+      </div>
+    <script>
+        let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
+
+next.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').appendChild(items[0])
+})
+
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').prepend(items[items.length - 1]) 
+})
+
+    </script>
+    </body>
+    </html>  
